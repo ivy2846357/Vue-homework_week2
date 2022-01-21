@@ -24,7 +24,7 @@ const app = createApp({
                 })
                 .catch(err => {
                     alert(err.data.message);
-                    window.location = 'login.html';
+                    window.location = 'index.html';
                 })
         },
         // 取得產品資料
@@ -48,6 +48,7 @@ const app = createApp({
                     console.log(err.data.message);
                 })
         },
+        // 取得產品詳細資料
         getProductInfo(item) {
             this.templateProduct = item;
         }
